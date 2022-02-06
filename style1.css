@@ -1,0 +1,48 @@
+body{font-family:"Century Gothic",Lato,sans-serif;padding:0;margin:0}
+a{text-decoration:none}
+nav{position:fixed;z-index:10;left:0;right:0;top:0;padding:0 5%;height:100px;background-color:#08081c;border-bottom-color:#415e12}
+nav .logo{float:left;width:40%;height:100%;display:flex;align-items:center;font-size:28px;color:#415e12;letter-spacing:.3rem}
+nav .links{float:right;padding:0;margin:0;width:60%;height:100%;display:flex;justify-content:space-around;align-items:center}
+nav .links li{list-style:none}
+nav .links a{display:block;padding:1em;text-decoration:none;font-size:18px;font-weight:100;color:#f5f5f5;letter-spacing:.3rem}
+nav .links a:hover{height:22px;background:#415e12;transition:all .5s ease;align-items:bottom}
+#nav-toggle{position:absolute;top:-100px}
+nav .icon-burger{display:none;position:absolute;right:5%;top:50%;transform:translateY(-50%)}
+nav .icon-burger .line{width:30px;height:5px;background-color:#fff;margin:5px;border-radius:3px;transition:all .3s ease-in-out}
+@media screen and (max-width:768px){
+nav .logo{float:none;width:auto;justify-content:center}
+nav .links{float:none;position:fixed;z-index:9;left:0;right:0;top:100px;bottom:100%;width:auto;height:auto;flex-direction:column;justify-content:space-evenly;background-color:#08081c;overflow:hidden;box-sizing:border-box;transition:all .5s ease-in-out}
+nav .links a{font-size:20px;font-weight:100;color:#f5f5f5;letter-spacing:.3rem}
+nav :checked~.links{bottom:0}
+nav .icon-burger{display:block}
+nav :checked~.icon-burger .line:nth-child(1){transform:translateY(10px) rotate(225deg)}
+nav :checked~.icon-burger .line:nth-child(3){transform:translateY(-10px) rotate(-225deg)}
+nav :checked~.icon-burger .line:nth-child(2){opacity:0}
+}
+.container{width:100%;height:100%;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;background-color:transparent}
+.container h1{font-size:4rem;margin:0;letter-spacing:.5rem;color:#f5f5f5;padding-top:3%;font-weight:100}
+@media(max-width:45em){
+.container h1{font-size:2rem}
+}
+@media(max-width:45em){
+.container h2{font-size:15px}
+}
+@media(max-width:45em){
+.container h3,h4{font-size:1rem}
+}
+.container h2{top:20%;font-size:3rem;color:#f5f5f5;letter-spacing:.5rem}
+.container h3{font: size 2.5rem;letter-spacing:.2rem;color:#f5f5f5}
+.container h4{font-size:30px;justify-content:center;font-weight:200;color:#d3d3d3;line-height:1.5em;margin-top:-10px}
+.container h5{font-size:20px;color:#d3d3d3;font-family:Calibri;font-style:oblique;font-weight:100;position:relative;letter-spacing:.1rem;margin-top:-30px}
+.haukai{width:80vh;justify-content:center;height:80vh;display:flex;flex-direction:column;position:relative;text-align:center;background-size:cover;background-image:url("outside\ dining.jpg")}
+.navs{display:flex;flex-direction:row;justify-content:center;align-items:center;transition:all .5s ease;font-weight:100;width:100%;height:3rem;color:#f5f5f5;background:#415e12;letter-spacing:.3rem;font-size:20px}
+.navs:hover{height:3rem;transition:all .5s ease;align-items:bottom;background-color:#08081c;font-size:20px;color:#415e12;font-weight:700}
+.navbar{display:flex;width:100%;position:relative;margin-top:5px}
+.list{display:grid;grid-template-columns:auto auto;text-align:left}
+.items{columns:2;column-gap:5%;column-width:400px;margin-top:-20px;padding-left:2em;row-gap:5%}
+.page{height:700px;width:100%;background-color:#415e12;padding-top:20px;max-width:80%}
+.booking{background-image:url(dinner-table.png);height:auto;width:80%;max-height:600px;border-color:#040222;border-style:solid;padding:2%;background-position:center;background-repeat:no-repeat}
+.privacy{background:#7ca11d;margin-top:20px;height:50px;width:100%;text-align:center;}
+.privacy:hover{height:50px;background:#415e12;transition:all .5s ease}
+.map2{content-visibility:hidden}
+.alignleft{text-align:left;float:left}
